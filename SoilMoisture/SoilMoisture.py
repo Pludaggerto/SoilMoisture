@@ -335,7 +335,7 @@ def plot_one_day(df, path, year, month, day):
    plot_VWC(df, path, types, types)
 
 def compare_data():
-    pass
+    return
    
 if __name__ == '__main__':
     main()

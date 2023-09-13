@@ -4,14 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1eca383c-8edf-4b53-8aab-6ec743aa56bf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SoilMoisture.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SoilMoisture</Name>
     <RootNamespace>SoilMoisture</RootNamespace>
-    <InterpreterId>CondaEnv|CondaEnv|geos</InterpreterId>
+    <InterpreterId>Global|VisualStudio|geos</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SoilMoisture.py" />
+    <Compile Include="main.py" />
+    <Compile Include="Reader.py" />
+    <Compile Include="SoilMoisture_test.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|geos" />
+    <InterpreterReference Include="Global|VisualStudio|geos" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="土壤湿度计数据.pptx" />

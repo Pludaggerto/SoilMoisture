@@ -334,8 +334,7 @@ def plot_one_day(df, path, year, month, day):
    plot_depth_temperature_tenmin(df, path, types, types)
    plot_VWC(df, path, types, types)
 
-def compare_data():
-    return
+    
    
 if __name__ == '__main__':
-    main()
+    merge_data()
